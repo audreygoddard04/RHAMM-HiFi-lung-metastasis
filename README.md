@@ -1,7 +1,7 @@
 # RHAMM-HiFi-lung-metastasis
 Long-read sequencing reveals reduced genomic heterogeneity in RHAMM-deficient breast cancer lung metastases.
-## About This Repository
 
+## About This Repository
 This repository contains the analysis scripts and supplementary materials
 for my undergraduate Honours thesis in Biology at the University of
 Western Ontario (2026).
@@ -21,23 +21,34 @@ This study used PacBio HiFi long-read whole-genome sequencing to
 characterize genome-wide genetic heterogeneity in lung metastases from
 MMTV-PyMT breast cancer mice with and without RHAMM deficiency.
 
-The central finding is that Rhamm-/- metastases harbour 15-fold more
+The central finding is that *Rhamm*⁻/⁻ metastases harbour 15-fold more
 cohort-shared exclusive variants than wild-type (4,078 vs. 269), with
-high allele frequencies (mean VAF = 0.94) consistent with clonal
-dominance, despite carrying a higher overall mutation burden.
+high allele frequencies (mean VAF = 0.939) consistent with clonal
+dominance, despite carrying a higher overall mutation burden
+(mean 23,159 vs. 14,349 variants per sample; p = 0.0008).
 
 ---
 
-## Repository Contents
+## MultiQC Reports
 
-| Folder | Contents |
-|--------|----------|
-| `scripts/R/` | R scripts for all figures and statistical tests |
-| `scripts/filtering/` | Bash scripts for the variant filtering pipeline |
-| `supplementary/` | MultiQC reports, NanoPlot HTML files, alignment stats |
-| `data/gene_lists/` | Gene lists used for DAVID and ClusterProfiler analysis |
-| `data/parsed/` | Parsed TSV files used as input for R figures |
-| `figures/` | Final publication-quality PNG figures |
+Interactive MultiQC HTML reports for all eight samples are available in
+`supplementary/multiqc_reports/`. Download the file and open it in any
+web browser to view the full interactive report.
+
+| Sample | Genotype | Direct link |
+|--------|----------|-------------|
+| 42_1 | *Rhamm*⁻/⁻ (KO) | [View report](supplementary/multiqc_reports/42_1_multiqc.html) |
+| 7_4 | *Rhamm*⁻/⁻ (KO) | [View report](supplementary/multiqc_reports/7_4_multiqc.html) |
+| 7_5 | *Rhamm*⁻/⁻ (KO) | [View report](supplementary/multiqc_reports/7_5_multiqc.html) |
+| 7_6 | *Rhamm*⁻/⁻ (KO) | [View report](supplementary/multiqc_reports/7_6_multiqc.html) |
+| 14_8 | *Rhamm*⁺/⁺ (WT) | [View report](supplementary/multiqc_reports/14_8_multiqc.html) |
+| 27_7 | *Rhamm*⁺/⁺ (WT) | [View report](supplementary/multiqc_reports/27_7_multiqc.html) |
+| 4_2 | *Rhamm*⁺/⁺ (WT) | [View report](supplementary/multiqc_reports/4_2_multiqc.html) |
+| 4_4 | *Rhamm*⁺/⁺ (WT) | [View report](supplementary/multiqc_reports/4_4_multiqc.html) |
+
+> **Note:** GitHub does not render HTML files directly in the browser.
+> Click the link, then click "Download raw file" to save it, and open
+> it locally in Chrome or Safari.
 
 ---
 
@@ -83,19 +94,23 @@ Contact audrey.goddard@uwo.ca for access.
 ## Software Versions
 
 ### Bioinformatics (server: kh-compute.uwo.ca)
-- pbmm2: vX.X.X
-- samtools: v1.33
-- DeepVariant: vX.X.X
-- HiPhase: vX.X.X
-- bcftools: vX.X.X
-- mosdepth: vX.X.X
-- NanoPlot: vX.X.X
+- pbmm2: v1.17
+- samtools: v1.19.2
+- DeepVariant: v1.6.0
+- HiPhase: v1.6.0
+- bcftools: v1.19
+- mosdepth: v0.3.10
+- NanoPlot: v1.46.2
+- NanoComp: v1.25.6
+- MultiQC: v1.33
+- SnpEff: v5.4c
+- VEP: v115.2
 - Reference genome: GRCm39/mm39
 
 ### R
-- R version 4.5.0
-- ggplot2, patchwork, dplyr, scales (CRAN)
-- clusterProfiler v4.18.4, org.Mm.eg.db (Bioconductor)
+- R: v4.5.0
+- ggplot2, patchwork, dplyr, tidyr, scales, cowplot (CRAN)
+- clusterProfiler v4.18.4, enrichplot, org.Mm.eg.db (Bioconductor)
 
 ---
 
