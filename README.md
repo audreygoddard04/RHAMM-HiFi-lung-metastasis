@@ -29,22 +29,23 @@ dominance, despite carrying a higher overall mutation burden
 
 ---
 
-## MultiQC Reports
+## Supplementary HTML Reports
 
-Interactive MultiQC HTML reports for all eight samples are available in
-`supplementary/multiqc_reports/`. Download the file and open it in any
-web browser to view the full interactive report.
+Interactive HTML reports for all quality control and annotation analyses
+are available in `supplementary/reports/`. Download any file and open it
+in Chrome or Safari to view the full interactive report.
 
-| Sample | Genotype | Direct link |
-|--------|----------|-------------|
-| 42_1 | *Rhamm*⁻/⁻ (KO) | [View report](supplementary/multiqc_reports/42_1_multiqc.html) |
-| 7_4 | *Rhamm*⁻/⁻ (KO) | [View report](supplementary/multiqc_reports/7_4_multiqc.html) |
-| 7_5 | *Rhamm*⁻/⁻ (KO) | [View report](supplementary/multiqc_reports/7_5_multiqc.html) |
-| 7_6 | *Rhamm*⁻/⁻ (KO) | [View report](supplementary/multiqc_reports/7_6_multiqc.html) |
-| 14_8 | *Rhamm*⁺/⁺ (WT) | [View report](supplementary/multiqc_reports/14_8_multiqc.html) |
-| 27_7 | *Rhamm*⁺/⁺ (WT) | [View report](supplementary/multiqc_reports/27_7_multiqc.html) |
-| 4_2 | *Rhamm*⁺/⁺ (WT) | [View report](supplementary/multiqc_reports/4_2_multiqc.html) |
-| 4_4 | *Rhamm*⁺/⁺ (WT) | [View report](supplementary/multiqc_reports/4_4_multiqc.html) |
+| Report | Tool | Description |
+|--------|------|-------------|
+| [HiFi Sequencing QC](supplementary/reports/hifi_multiqc_report.html) | MultiQC | Raw HiFi read quality across all 8 samples |
+| [Coverage Report](supplementary/reports/mosdepth_multiqc_report.html) | MultiQC + mosdepth | Genome-wide coverage depth per sample |
+| [Alignment Statistics](supplementary/reports/samtools_multiqc_report.html) | MultiQC + samtools | Alignment rates and read statistics |
+| [NanoPlot QC](supplementary/reports/nanoplot_multiqc_report.html) | MultiQC + NanoPlot | Read length and quality distributions |
+| [DeepVariant Report](supplementary/reports/deepvariant_complete_report.html) | DeepVariant | Variant calling summary across all samples |
+| [KO SnpEff Summary](supplementary/reports/KO_snpEff_summary.html) | SnpEff | Functional annotation of KO-exclusive variants |
+| [WT SnpEff Summary](supplementary/reports/WT_snpEff_summary.html) | SnpEff | Functional annotation of WT-exclusive variants |
+| [KO VEP Summary](supplementary/reports/KO_vep_summary.html) | VEP | Variant effect prediction for KO-exclusive variants |
+| [WT VEP Summary](supplementary/reports/WT_vep_summary.html) | VEP | Variant effect prediction for WT-exclusive variants |
 
 > **Note:** GitHub does not render HTML files directly in the browser.
 > Click the link, then click "Download raw file" to save it, and open
