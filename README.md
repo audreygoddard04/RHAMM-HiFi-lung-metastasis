@@ -32,24 +32,23 @@ dominance, despite carrying a higher overall mutation burden
 ## Supplementary HTML Reports
 
 Interactive HTML reports for all quality control and annotation analyses
-are available in `supplementary/reports/`. Download any file and open it
-in Chrome or Safari to view the full interactive report.
+are available in this repository. Download any file and open it in
+Chrome or Safari to view the full interactive report.
 
 | Report | Tool | Description |
 |--------|------|-------------|
-| [HiFi Sequencing QC](supplementary/reports/hifi_multiqc_report.html) | MultiQC | Raw HiFi read quality across all 8 samples |
-| [Coverage Report](supplementary/reports/mosdepth_multiqc_report.html) | MultiQC + mosdepth | Genome-wide coverage depth per sample |
-| [Alignment Statistics](supplementary/reports/samtools_multiqc_report.html) | MultiQC + samtools | Alignment rates and read statistics |
-| [NanoPlot QC](supplementary/reports/nanoplot_multiqc_report.html) | MultiQC + NanoPlot | Read length and quality distributions |
-| [DeepVariant Report](supplementary/reports/deepvariant_complete_report.html) | DeepVariant | Variant calling summary across all samples |
-| [KO SnpEff Summary](supplementary/reports/KO_snpEff_summary.html) | SnpEff | Functional annotation of KO-exclusive variants |
-| [WT SnpEff Summary](supplementary/reports/WT_snpEff_summary.html) | SnpEff | Functional annotation of WT-exclusive variants |
-| [KO VEP Summary](supplementary/reports/KO_vep_summary.html) | VEP | Variant effect prediction for KO-exclusive variants |
-| [WT VEP Summary](supplementary/reports/WT_vep_summary.html) | VEP | Variant effect prediction for WT-exclusive variants |
+| [HiFi Sequencing QC](fastqc_multiqc_report.html) | MultiQC | Raw HiFi read quality across all 8 samples |
+| [Coverage Report](mosdepth_multiqc_report.html) | MultiQC + mosdepth | Genome-wide coverage depth per sample |
+| [Alignment Statistics](samtools_multiqc_report.html) | MultiQC + samtools | Alignment rates and read statistics |
+| [NanoPlot QC](nanoplot_multiqc_report.html) | MultiQC + NanoPlot | Read length and quality distributions |
+| [DeepVariant Report](deepvariant_complete_report.html) | DeepVariant | Variant calling summary across all samples |
+| [KO SnpEff Summary](KO_snpEff_summary.html) | SnpEff | Functional annotation of KO-exclusive variants |
+| [WT SnpEff Summary](WT_snpEff_summary.html) | SnpEff | Functional annotation of WT-exclusive variants |
+| [KO VEP Summary](KO_vep_summary.html) | VEP | Variant effect prediction for KO-exclusive variants |
+| [WT VEP Summary](WT_vep_summary.html) | VEP | Variant effect prediction for WT-exclusive variants |
 
-> **Note:** GitHub does not render HTML files directly in the browser.
-> Click the link, then click "Download raw file" to save it, and open
-> it locally in Chrome or Safari.
+> **Note:** GitHub does not render HTML files in the browser.
+> Click any link → click **"Download raw file"** → open locally in Chrome or Safari.
 
 ---
 
