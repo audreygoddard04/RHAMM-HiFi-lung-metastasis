@@ -88,7 +88,7 @@ Place these files in the same folder as the R scripts before running:
 | `wt_exclusive_genes_clean.txt` | WT gene list | Extracted from SnpEff VCF |
 
 Raw FASTQ and BAM files are not included due to size.
-Contact audrey.goddard@uwo.ca for access.
+Contact audreyannagoddard@gmail.com for access.
 
 ---
 
